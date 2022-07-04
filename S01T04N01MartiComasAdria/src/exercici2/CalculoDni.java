@@ -1,6 +1,64 @@
 package exercici2;
 
+import java.util.ArrayList;
+
 public class CalculoDni {
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+		
+		int dniNum = 47943391;
+//		String dniLletra = "Y";
+		
+		calcularLletra(dniNum);
+		
+		
+		
+		
+		
+	}
+	public static void calcularLletra(int dniNum) {
+		int pos = dniNum % 23;
+		ArrayList<String> lletresDni = lletresDni();
+		
+		String lletra = lletresDni.get(pos);
+		System.out.println(dniNum+lletra);
+		
+	}
+	
+	public static ArrayList<String> lletresDni(){
+		ArrayList<String> lletres = new ArrayList<String>();
+		
+		lletres.add("T");
+		lletres.add("R");
+		lletres.add("W");
+		lletres.add("A");
+		lletres.add("G");
+		lletres.add("M");
+		lletres.add("Y");
+		lletres.add("F");
+		lletres.add("P");
+		lletres.add("D");
+		lletres.add("X");
+		lletres.add("B");
+		lletres.add("N");
+		lletres.add("J");
+		lletres.add("Z");
+		lletres.add("S");
+		lletres.add("Q");
+		lletres.add("V");
+		lletres.add("H");
+		lletres.add("L");
+		lletres.add("C");
+		lletres.add("K");
+		lletres.add("E");
+		
+		return lletres;
+		
+	}
 
 }
 /*
