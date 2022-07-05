@@ -3,12 +3,12 @@ package exercici3;
 import java.util.ArrayList;
 
 public class OutOfBounds {
-	ArrayList<String> list = new ArrayList<String>();
-	
-	String x = list.get(1);
+
+	public static void getOutOfBounds() {
+		ArrayList<String> list = new ArrayList<String>();
+		list.get(1);
+
+	}
 
 }
 
-/*
- * 
- */
